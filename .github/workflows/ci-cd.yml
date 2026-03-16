@@ -9,9 +9,9 @@ name: HealthTracker DevSecOps Pipeline
 
 on:
   push:
-    branches: ["*"]
+    branches: ["dev"]
   pull_request:
-    branches: ["*"]
+    branches: ["dev"]
 
 # Security: restrict default permissions to read-only
 permissions:
@@ -215,12 +215,12 @@ jobs:
 
   # ==============================================================
   # STAGE 7: Update K8s Manifest with New Image Tag
-  # Only runs on push to main (not on PRs)
+  # Only runs on push to dev (not on PRs)
   # ==============================================================
   update-manifest:
     name: "🚀 Update K8s Manifest"
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' 
+    if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
     permissions:
       contents: write # Needed to push manifest changes
     steps:

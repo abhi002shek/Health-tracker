@@ -12,7 +12,7 @@ terraform {
   # backend "s3" {
   #   bucket         = "healthtracker-terraform-state"
   #   key            = "eks/terraform.tfstate"
-  #   region         = "us-east-1"
+  #   region         = "ap-south-1"
   #   dynamodb_table = "healthtracker-tf-lock"
   #   encrypt        = true
   # }
