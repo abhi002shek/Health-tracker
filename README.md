@@ -53,7 +53,7 @@ cd Healthtracker
 docker compose up --build
 ```
 
-App available at `http://localhost`
+App available at `http://localhost or IP (If using EC2 instance)`
 
 ### Useful Commands
 
