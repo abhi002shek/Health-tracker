@@ -342,7 +342,7 @@ spec:
 ---
 # ---- Frontend Service (NodePort — for access via port-forward or node IP) ----
 # NOTE: Changed from LoadBalancer because this AWS account does not support
-# creating load balancers. Use `kubectl port-forward svc/healthtracker-frontend 8080:80 -n jerney`
+# creating load balancers. Use `kubectl port-forward svc/healthtracker-frontend 8080:80 -n healthtracker`
 # to access the frontend locally.
 apiVersion: v1
 kind: Service
