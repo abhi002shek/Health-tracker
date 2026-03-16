@@ -200,7 +200,7 @@ spec:
               echo "DB is ready!"
       containers:
         - name: backend
-          image: ghcr.io/abhi002shek/Health-tracker/healthtracker-backend:a82045f
+          image: ghcr.io/abhi002shek/Health-tracker/healthtracker-backend:e209918
           ports:
             - containerPort: 5000
               protocol: TCP
@@ -307,7 +307,7 @@ spec:
           effect: "NoSchedule"
       containers:
         - name: frontend
-          image: ghcr.io/abhi002shek/Health-tracker/healthtracker-frontend:a82045f
+          image: ghcr.io/abhi002shek/Health-tracker/healthtracker-frontend:e209918
           ports:
             - containerPort: 8080
               protocol: TCP
